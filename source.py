@@ -227,8 +227,14 @@ sns.set(rc={"figure.figsize": (10, 10)})
 # - How are you planning to address these challenges?
 # Investigate the data being present to see if anything can be improved. More data will be researched and used.
 
-# In[ ]:
+# In[1]:
 
 
 get_ipython().system('jupyter nbconvert --to python source.ipynb')
+
+
+# In[ ]:
+
+
+
 

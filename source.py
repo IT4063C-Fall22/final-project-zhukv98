@@ -238,7 +238,7 @@ for col in vaccination_df.select_dtypes(include='object').columns:
 vaccination_df['WHO_REGION'] = vaccination_df['WHO_REGION'].replace(['OTHER'], 'EURO')
 
 
-# Removing rows that have missing data from the vaccination dataset. Since Liechtenstein is has the value of 'OTHER' it is treated as 'EURO' since it's part of Europe.
+# Removing rows that have missing data from the vaccination dataset. Since Liechtenstein is has the value of 'OTHER' in the WHO_REGION column, it is treated as 'EURO' since it's part of Europe.
 
 # In[52]:
 
@@ -390,8 +390,14 @@ updated_gradient_boosting_classifier.fit(vaccine_test_set, vaccine_test_y)
 print("AUC Score: {}".format(updated_gradient_boosting_classifier.score(vaccine_test_set, vaccine_test_y)))
 
 
-# In[2]:
+# In[73]:
 
 
 get_ipython().system('jupyter nbconvert --to python source.ipynb')
+
+
+# In[ ]:
+
+
+
 

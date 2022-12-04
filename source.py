@@ -390,7 +390,7 @@ updated_gradient_boosting_classifier.fit(vaccine_test_set, vaccine_test_y)
 print("AUC Score: {}".format(updated_gradient_boosting_classifier.score(vaccine_test_set, vaccine_test_y)))
 
 
-# In[73]:
+# In[74]:
 
 
 get_ipython().system('jupyter nbconvert --to python source.ipynb')
